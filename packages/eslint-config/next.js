@@ -1,5 +1,6 @@
 const { resolve } = require("node:path");
 
+
 const project = resolve(process.cwd(), "tsconfig.json");
 
 /** @type {import("eslint").Linter.Config} */
@@ -11,7 +12,7 @@ module.exports = {
     "eslint-config-turbo",
   ],
   globals: {
-    React: true,
+    React: false,
     JSX: true,
   },
   env: {
@@ -33,3 +34,6 @@ module.exports = {
   ],
   overrides: [{ files: ["*.js?(x)", "*.ts?(x)"] }],
 };
+
+
+// foo

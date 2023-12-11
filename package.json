@@ -5,9 +5,11 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "my-tool": "my-tool"
   },
   "devDependencies": {
+    "my-tool": "*",
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
     "prettier": "^3.1.0",
